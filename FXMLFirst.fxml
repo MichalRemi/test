@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.lachi.drddesk.FXMLFirstController">
+    <stylesheets>
+        <URL value="@DrDdesk.css" />
+    </stylesheets>
+
+   <children>
+      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox minHeight="683.0" minWidth="150.0" spacing="5.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 1">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 2" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 3" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 4" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 5" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 6" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 7" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 8" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 9" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 10" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 11" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 12" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 13" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 14" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="slot 15" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="80.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox minHeight="768.0" minWidth="704.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <TabPane minHeight="768.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="SOMETIMES">
+                    <tabs>
+                      <Tab text="Postava">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <VBox minWidth="668.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Button fx:id="novaButton" minHeight="40.0" mnemonicParsing="false" onAction="#handleNovaPostava" prefHeight="40.0" prefWidth="80.0" text="Nová" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Načti" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Ulož">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin></Button>
+                                                <MenuButton alignment="CENTER_RIGHT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Do slotu">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" text="slot 1" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 2" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 3" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 4" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 5" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 6" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 7" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 8" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 9" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 10" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 11" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 12" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 13" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 14" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 15" />
+                                                  </items>
+                                                </MenuButton>
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="+1 Úroveň" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <GridPane>
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="45.0" minWidth="45.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="45.0" minWidth="45.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                                <ColumnConstraints hgrow="SOMETIMES" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <Label prefHeight="17.0" text="Jméno">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" text="Rasa" GridPane.columnIndex="2">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" text="Povolání" GridPane.columnIndex="4">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="JmenoLabel" text="Lachi" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="RasaLabel" text="člověk" GridPane.columnIndex="3">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="PovolaniLabel" text="zloděj" GridPane.columnIndex="5">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" text="Úroveň" GridPane.columnIndex="10">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" text="Životy" GridPane.columnIndex="6">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label disable="true" prefHeight="17.0" text="Magy" GridPane.columnIndex="8">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="ZivotyLabel" text="6" GridPane.columnIndex="7">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="UrovenLabel" text="Label" GridPane.columnIndex="11">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="MagyLabel" text="Label" GridPane.columnIndex="9" />
+                                                <Label fx:id="ZkusenostiLabel" text="Label" GridPane.columnIndex="13" />
+                                                <Label text="Zkušenosti" GridPane.columnIndex="12">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </GridPane>
+                                          <VBox minHeight="663.0">
+                                             <children>
+                                                <HBox>
+                                                   <children>
+                                                      <ListView prefHeight="200.0" prefWidth="200.0" />
+                                                      <VBox prefWidth="325.0">
+                                                         <children>
+                                                            <ListView prefHeight="47.0" prefWidth="325.0" />
+                                                            <Label text="Poznámky">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <TextArea fx:id="PoznamkyTextArea" prefHeight="325.0" prefWidth="325.0" />
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                      <VBox prefHeight="469.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label text="Zvláštní schopnosti">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ListView fx:id="ZvlastniSchopnostiAKouzla" prefHeight="632.0" prefWidth="200.0">
+                                                               <VBox.margin>
+                                                                  <Insets top="5.0" />
+                                                               </VBox.margin>
+                                                            </ListView>
+                                                         </children>
+                                                         <HBox.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </HBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Bestiář">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <HBox prefHeight="50.0" prefWidth="699.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Nová">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Hledat" />
+                                                <MenuButton alignment="CENTER_RIGHT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Do slotu">
+                                                   <items>
+                                                      <MenuItem mnemonicParsing="false" text="slot 1" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 2" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 3" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 4" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 5" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 6" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 7" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 8" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 9" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 10" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 11" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 12" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 13" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 14" />
+                                                      <MenuItem mnemonicParsing="false" text="slot 15" />
+                                                   </items>
+                                                </MenuButton>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox prefHeight="500.0" prefWidth="500.0">
+                                             <children>
+                                                <GridPane>
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="50.0" minHeight="25.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Jméno nestvůry" />
+                                                      <Label text="životaschopnost" GridPane.rowIndex="1" />
+                                                      <Label text="útočné číslo" GridPane.rowIndex="2" />
+                                                      <Label text="obranné číslo" GridPane.rowIndex="3" />
+                                                      <Label text="odolnost" GridPane.rowIndex="4" />
+                                                      <Label text="velikost" GridPane.rowIndex="5" />
+                                                      <Label text="bojovnost" GridPane.rowIndex="6" />
+                                                      <Label text="zranitelnost" GridPane.rowIndex="8" />
+                                                      <Label text="pohyblivost" GridPane.rowIndex="9" />
+                                                      <Label text="vytrvalost" GridPane.rowIndex="10" />
+                                                      <Label text="inteligence" GridPane.rowIndex="12" />
+                                                      <Label text="manév. schop." GridPane.rowIndex="11" />
+                                                      <Label text="charisma" GridPane.rowIndex="13" />
+                                                      <Label text="ZSM" GridPane.rowIndex="14" />
+                                                      <Label text="přesvědčení" GridPane.rowIndex="15" />
+                                                      <Label text="poklady" GridPane.rowIndex="16" />
+                                                      <Label text="zkušenost" GridPane.rowIndex="17" />
+                                                      <Label text="ochočení" GridPane.rowIndex="18" />
+                                                      <Label text="Label" GridPane.columnIndex="1" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                                                      <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                                                   </children>
+                                                </GridPane>
+                                                <ListView prefHeight="500.0" prefWidth="501.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <Label layoutX="-1.0" layoutY="551.0" prefHeight="188.0" prefWidth="605.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="551.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Výbava">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="50.0" prefWidth="704.0">
+                                       <children>
+                                          <HBox maxHeight="50.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Nový">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Nahrát" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Uložit" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="předměty" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <VBox>
+                                             <children>
+                                                <ScrollPane layoutX="-15.0" layoutY="107.0" minHeight="675.0" prefHeight="237.0" prefWidth="704.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                                   <content>
+                                                      <GridPane>
+                                                        <columnConstraints>
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                        </columnConstraints>
+                                                        <rowConstraints>
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        </rowConstraints>
+                                                         <children>
+                                                            <Label text="předmět" />
+                                                            <Label text="cena" GridPane.columnIndex="1" />
+                                                            <Label text="váha" GridPane.columnIndex="2" />
+                                                         </children>
+                                                      </GridPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Poznámky">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Button minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Nová">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Hledat" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Button" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Button" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Button" />
+                                                <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="Button" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <ListView prefHeight="229.0" prefWidth="704.0" />
+                                          <GridPane>
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label prefHeight="17.0" text="název poznámky" />
+                                                <Label prefHeight="17.0" text="datum" GridPane.columnIndex="1" />
+                                             </children>
+                                          </GridPane>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="702.0">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="6.0" prefHeight="188.0" prefWidth="702.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                          <GridPane>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <TextField prefHeight="25.0" prefWidth="317.0" text="název poznámky">
+                                                   <GridPane.margin>
+                                                      <Insets right="5.0" />
+                                                   </GridPane.margin></TextField>
+                                                <DatePicker prefHeight="25.0" prefWidth="350.0" GridPane.columnIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin></DatePicker>
+                                             </children>
+                                          </GridPane>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="702.0">
+                                                   <children>
+                                                      <TextArea prefHeight="189.0" prefWidth="704.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TabPane>
+               </children>
+            </VBox>
+            <VBox minHeight="683.0" minWidth="150.0" spacing="5.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Button fx:id="konecButton" minHeight="40.0" mnemonicParsing="false" onAction="#handleKonec" text="konec">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="90.0" top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+                  <Button minHeight="40.0" minWidth="140.0" mnemonicParsing="false" text="Button" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
